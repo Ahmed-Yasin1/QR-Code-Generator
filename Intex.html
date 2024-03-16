@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qr Code Generator</title>
+    <link rel="stylesheet" href="Sytle.css">
+</head>
+<body>
+     <div class="container">
+           <h1>Enter Your Text URL</h1>
+           <input type="text" placeholder="Text Or URL" id="text">
+           <div class="imgBox" id="imgBox">
+               <img src="" alt="" id="img">
+           </div>
+           <button onclick="Generator()">Geneate Gr Code</button>
+     </div>
+
+     <script>
+           let imgBox=document.querySelector("#imgBox");
+           let img=document.querySelector("#img");
+           let text=document.querySelector("#text");
+           
+           function Generator(){
+              img.src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data= " + text.value ;
+              imgBox.classList.add("boxshadow");
+           }
+     </script>
+</body>
+</html>
