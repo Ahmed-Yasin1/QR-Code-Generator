@@ -47,7 +47,7 @@ body{
     overflow: hidden;
     width: 100%;
     padding: 10px;
-    transition: all .4s;
+    transition: all .1s;
 }
 .boxshadow{
     min-height: 170px;
